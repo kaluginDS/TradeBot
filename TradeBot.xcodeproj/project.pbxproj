@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FAF779B282939BA00A8BC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF779A282939BA00A8BC2E /* AppDelegate.swift */; };
+		1FAF779D282939BB00A8BC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF779C282939BB00A8BC2E /* Assets.xcassets */; };
+		1FAF77A0282939BB00A8BC2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF779E282939BB00A8BC2E /* MainMenu.xib */; };
+		1FAF77AB282939BB00A8BC2E /* TradeBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77AA282939BB00A8BC2E /* TradeBotTests.swift */; };
+		1FAF77B5282939BB00A8BC2E /* TradeBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77B4282939BB00A8BC2E /* TradeBotUITests.swift */; };
+		1FAF77B7282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77B6282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FAF77A7282939BB00A8BC2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FAF778F282939BA00A8BC2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FAF7796282939BA00A8BC2E;
+			remoteInfo = TradeBot;
+		};
+		1FAF77B1282939BB00A8BC2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FAF778F282939BA00A8BC2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FAF7796282939BA00A8BC2E;
+			remoteInfo = TradeBot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FAF7797282939BA00A8BC2E /* TradeBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAF779A282939BA00A8BC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FAF779C282939BB00A8BC2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FAF779F282939BB00A8BC2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1FAF77A1282939BB00A8BC2E /* TradeBot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TradeBot.entitlements; sourceTree = "<group>"; };
+		1FAF77A6282939BB00A8BC2E /* TradeBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAF77AA282939BB00A8BC2E /* TradeBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotTests.swift; sourceTree = "<group>"; };
+		1FAF77B0282939BB00A8BC2E /* TradeBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAF77B4282939BB00A8BC2E /* TradeBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITests.swift; sourceTree = "<group>"; };
+		1FAF77B6282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FAF7794282939BA00A8BC2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAF77A3282939BB00A8BC2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAF77AD282939BB00A8BC2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FAF778E282939BA00A8BC2E = {
+			isa = PBXGroup;
+			children = (
+				1FAF7799282939BA00A8BC2E /* TradeBot */,
+				1FAF77A9282939BB00A8BC2E /* TradeBotTests */,
+				1FAF77B3282939BB00A8BC2E /* TradeBotUITests */,
+				1FAF7798282939BA00A8BC2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FAF7798282939BA00A8BC2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FAF7797282939BA00A8BC2E /* TradeBot.app */,
+				1FAF77A6282939BB00A8BC2E /* TradeBotTests.xctest */,
+				1FAF77B0282939BB00A8BC2E /* TradeBotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FAF7799282939BA00A8BC2E /* TradeBot */ = {
+			isa = PBXGroup;
+			children = (
+				1FAF779A282939BA00A8BC2E /* AppDelegate.swift */,
+				1FAF779C282939BB00A8BC2E /* Assets.xcassets */,
+				1FAF779E282939BB00A8BC2E /* MainMenu.xib */,
+				1FAF77A1282939BB00A8BC2E /* TradeBot.entitlements */,
+			);
+			path = TradeBot;
+			sourceTree = "<group>";
+		};
+		1FAF77A9282939BB00A8BC2E /* TradeBotTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FAF77AA282939BB00A8BC2E /* TradeBotTests.swift */,
+			);
+			path = TradeBotTests;
+			sourceTree = "<group>";
+		};
+		1FAF77B3282939BB00A8BC2E /* TradeBotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FAF77B4282939BB00A8BC2E /* TradeBotUITests.swift */,
+				1FAF77B6282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift */,
+			);
+			path = TradeBotUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FAF7796282939BA00A8BC2E /* TradeBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FAF77BA282939BB00A8BC2E /* Build configuration list for PBXNativeTarget "TradeBot" */;
+			buildPhases = (
+				1FAF7793282939BA00A8BC2E /* Sources */,
+				1FAF7794282939BA00A8BC2E /* Frameworks */,
+				1FAF7795282939BA00A8BC2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradeBot;
+			productName = TradeBot;
+			productReference = 1FAF7797282939BA00A8BC2E /* TradeBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FAF77A5282939BB00A8BC2E /* TradeBotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FAF77BD282939BB00A8BC2E /* Build configuration list for PBXNativeTarget "TradeBotTests" */;
+			buildPhases = (
+				1FAF77A2282939BB00A8BC2E /* Sources */,
+				1FAF77A3282939BB00A8BC2E /* Frameworks */,
+				1FAF77A4282939BB00A8BC2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FAF77A8282939BB00A8BC2E /* PBXTargetDependency */,
+			);
+			name = TradeBotTests;
+			productName = TradeBotTests;
+			productReference = 1FAF77A6282939BB00A8BC2E /* TradeBotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FAF77AF282939BB00A8BC2E /* TradeBotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FAF77C0282939BB00A8BC2E /* Build configuration list for PBXNativeTarget "TradeBotUITests" */;
+			buildPhases = (
+				1FAF77AC282939BB00A8BC2E /* Sources */,
+				1FAF77AD282939BB00A8BC2E /* Frameworks */,
+				1FAF77AE282939BB00A8BC2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FAF77B2282939BB00A8BC2E /* PBXTargetDependency */,
+			);
+			name = TradeBotUITests;
+			productName = TradeBotUITests;
+			productReference = 1FAF77B0282939BB00A8BC2E /* TradeBotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FAF778F282939BA00A8BC2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					1FAF7796282939BA00A8BC2E = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					1FAF77A5282939BB00A8BC2E = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 1FAF7796282939BA00A8BC2E;
+					};
+					1FAF77AF282939BB00A8BC2E = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 1FAF7796282939BA00A8BC2E;
+					};
+				};
+			};
+			buildConfigurationList = 1FAF7792282939BA00A8BC2E /* Build configuration list for PBXProject "TradeBot" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FAF778E282939BA00A8BC2E;
+			productRefGroup = 1FAF7798282939BA00A8BC2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FAF7796282939BA00A8BC2E /* TradeBot */,
+				1FAF77A5282939BB00A8BC2E /* TradeBotTests */,
+				1FAF77AF282939BB00A8BC2E /* TradeBotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FAF7795282939BA00A8BC2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAF779D282939BB00A8BC2E /* Assets.xcassets in Resources */,
+				1FAF77A0282939BB00A8BC2E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAF77A4282939BB00A8BC2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAF77AE282939BB00A8BC2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FAF7793282939BA00A8BC2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAF779B282939BA00A8BC2E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAF77A2282939BB00A8BC2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAF77AB282939BB00A8BC2E /* TradeBotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAF77AC282939BB00A8BC2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAF77B7282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift in Sources */,
+				1FAF77B5282939BB00A8BC2E /* TradeBotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FAF77A8282939BB00A8BC2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FAF7796282939BA00A8BC2E /* TradeBot */;
+			targetProxy = 1FAF77A7282939BB00A8BC2E /* PBXContainerItemProxy */;
+		};
+		1FAF77B2282939BB00A8BC2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FAF7796282939BA00A8BC2E /* TradeBot */;
+			targetProxy = 1FAF77B1282939BB00A8BC2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FAF779E282939BB00A8BC2E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FAF779F282939BB00A8BC2E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FAF77B8282939BB00A8BC2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FAF77B9282939BB00A8BC2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1FAF77BB282939BB00A8BC2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TradeBot/TradeBot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M9F4FUBEEU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kalugin.TradeBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1FAF77BC282939BB00A8BC2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TradeBot/TradeBot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M9F4FUBEEU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kalugin.TradeBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1FAF77BE282939BB00A8BC2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M9F4FUBEEU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kalugin.TradeBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradeBot.app/Contents/MacOS/TradeBot";
+			};
+			name = Debug;
+		};
+		1FAF77BF282939BB00A8BC2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M9F4FUBEEU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kalugin.TradeBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradeBot.app/Contents/MacOS/TradeBot";
+			};
+			name = Release;
+		};
+		1FAF77C1282939BB00A8BC2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M9F4FUBEEU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kalugin.TradeBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TradeBot;
+			};
+			name = Debug;
+		};
+		1FAF77C2282939BB00A8BC2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M9F4FUBEEU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kalugin.TradeBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TradeBot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FAF7792282939BA00A8BC2E /* Build configuration list for PBXProject "TradeBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAF77B8282939BB00A8BC2E /* Debug */,
+				1FAF77B9282939BB00A8BC2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FAF77BA282939BB00A8BC2E /* Build configuration list for PBXNativeTarget "TradeBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAF77BB282939BB00A8BC2E /* Debug */,
+				1FAF77BC282939BB00A8BC2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FAF77BD282939BB00A8BC2E /* Build configuration list for PBXNativeTarget "TradeBotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAF77BE282939BB00A8BC2E /* Debug */,
+				1FAF77BF282939BB00A8BC2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FAF77C0282939BB00A8BC2E /* Build configuration list for PBXNativeTarget "TradeBotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAF77C1282939BB00A8BC2E /* Debug */,
+				1FAF77C2282939BB00A8BC2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FAF778F282939BA00A8BC2E /* Project object */;
+}
