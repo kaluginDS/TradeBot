@@ -22,7 +22,6 @@
 		1F16552F2829C2CF0069053A /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F16552E2829C2CF0069053A /* Date+.swift */; };
 		1F1655312829C3910069053A /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1655302829C3910069053A /* String+.swift */; };
 		1F2CD43328311DF100906DA0 /* TradeBotInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CD42D28311DF100906DA0 /* TradeBotInteractor.swift */; };
-		1F2CD43B28312D0200906DA0 /* TinkoffInvestSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1F2CD43A28312D0200906DA0 /* TinkoffInvestSDK */; };
 		1F2CD44428313F0400906DA0 /* TradeBotModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CD43F28313F0400906DA0 /* TradeBotModule.swift */; };
 		1F2CD44528313F0400906DA0 /* TradeBotPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CD44028313F0400906DA0 /* TradeBotPresenter.swift */; };
 		1F2CD44628313F0400906DA0 /* TradeBotRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CD44128313F0400906DA0 /* TradeBotRouter.swift */; };
@@ -60,6 +59,7 @@
 		1F5D65FA2834E71300788D88 /* GraphContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D65F92834E71300788D88 /* GraphContentView.swift */; };
 		1F5D65FC2834E79F00788D88 /* AxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D65FB2834E79F00788D88 /* AxisView.swift */; };
 		1F5D66002834F35C00788D88 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D65FF2834F35C00788D88 /* GraphView.swift */; };
+		1FA7071B283C20B400933A19 /* TinkoffInvestSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1FA7071A283C20B400933A19 /* TinkoffInvestSDK */; };
 		1FAF779B282939BA00A8BC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF779A282939BA00A8BC2E /* AppDelegate.swift */; };
 		1FAF779D282939BB00A8BC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF779C282939BB00A8BC2E /* Assets.xcassets */; };
 		1FAF77AB282939BB00A8BC2E /* TradeBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77AA282939BB00A8BC2E /* TradeBotTests.swift */; };
@@ -110,7 +110,6 @@
 		1F16552E2829C2CF0069053A /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		1F1655302829C3910069053A /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		1F2CD42D28311DF100906DA0 /* TradeBotInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotInteractor.swift; sourceTree = "<group>"; };
-		1F2CD43828312BE000906DA0 /* TinkoffInvestSwiftSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TinkoffInvestSwiftSDK; path = ../TinkoffInvestSwiftSDK; sourceTree = "<group>"; };
 		1F2CD43F28313F0400906DA0 /* TradeBotModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotModule.swift; sourceTree = "<group>"; };
 		1F2CD44028313F0400906DA0 /* TradeBotPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotPresenter.swift; sourceTree = "<group>"; };
 		1F2CD44128313F0400906DA0 /* TradeBotRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotRouter.swift; sourceTree = "<group>"; };
@@ -148,6 +147,7 @@
 		1F5D65F92834E71300788D88 /* GraphContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphContentView.swift; sourceTree = "<group>"; };
 		1F5D65FB2834E79F00788D88 /* AxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisView.swift; sourceTree = "<group>"; };
 		1F5D65FF2834F35C00788D88 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		1FA70719283C20A300933A19 /* TinkoffInvestSwiftSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TinkoffInvestSwiftSDK; sourceTree = "<group>"; };
 		1FAF7797282939BA00A8BC2E /* TradeBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAF779A282939BA00A8BC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FAF779C282939BB00A8BC2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F2CD43B28312D0200906DA0 /* TinkoffInvestSDK in Frameworks */,
+				1FA7071B283C20B400933A19 /* TinkoffInvestSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,14 +259,6 @@
 				1F2CD4492831405800906DA0 /* TradeBotViewController.storyboard */,
 			);
 			path = TradeBot;
-			sourceTree = "<group>";
-		};
-		1F2CD43728312BE000906DA0 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				1F2CD43828312BE000906DA0 /* TinkoffInvestSwiftSDK */,
-			);
-			name = Packages;
 			sourceTree = "<group>";
 		};
 		1F2CD43928312D0200906DA0 /* Frameworks */ = {
@@ -384,10 +376,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1FA70718283C20A300933A19 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1FA70719283C20A300933A19 /* TinkoffInvestSwiftSDK */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		1FAF778E282939BA00A8BC2E = {
 			isa = PBXGroup;
 			children = (
-				1F2CD43728312BE000906DA0 /* Packages */,
+				1FA70718283C20A300933A19 /* Packages */,
 				1FAF7799282939BA00A8BC2E /* TradeBot */,
 				1FAF77A9282939BB00A8BC2E /* TradeBotTests */,
 				1FAF77B3282939BB00A8BC2E /* TradeBotUITests */,
@@ -484,7 +484,7 @@
 			);
 			name = TradeBot;
 			packageProductDependencies = (
-				1F2CD43A28312D0200906DA0 /* TinkoffInvestSDK */,
+				1FA7071A283C20B400933A19 /* TinkoffInvestSDK */,
 			);
 			productName = TradeBot;
 			productReference = 1FAF7797282939BA00A8BC2E /* TradeBot.app */;
@@ -832,7 +832,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kalugin.TradeBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -861,7 +861,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kalugin.TradeBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -985,7 +985,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1F2CD43A28312D0200906DA0 /* TinkoffInvestSDK */ = {
+		1FA7071A283C20B400933A19 /* TinkoffInvestSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TinkoffInvestSDK;
 		};

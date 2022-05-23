@@ -99,12 +99,12 @@ extension  MainPresenter: MainViewOutput {
 extension MainPresenter: MainInteractorOutput {
 
     func getSharesSuccess(response: SharesResponse) {
-        let appleShare = response.instruments.first(where: {
-            return $0.name == "Apple"
-        })
-        guard let appleShare = appleShare else {
-            return
-        }
+//        let appleShare = response.instruments.first(where: {
+//            return $0.name == "Apple"
+//        })
+//        guard let appleShare = appleShare else {
+//            return
+//        }
 //        let model = StrategyTesterModuleModel(figi: appleShare.figi)
 //        tester = StrategyTesterModule(model: model)
 //        let strategy = BarUpDownTradeStrategy()
