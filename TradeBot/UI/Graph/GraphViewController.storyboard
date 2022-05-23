@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="bU7-R8-ocO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Graph View Controller-->
+        <scene sceneID="PEd-7d-5j0">
+            <objects>
+                <viewController storyboardIdentifier="GraphViewController" id="bU7-R8-ocO" customClass="GraphViewController" customModule="TradeBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="tOy-S4-hL0">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Arz-ms-mqP" customClass="GraphContentView" customModule="TradeBot" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Arz-ms-mqP" firstAttribute="leading" secondItem="tOy-S4-hL0" secondAttribute="leading" id="EuJ-nc-3xS"/>
+                            <constraint firstAttribute="trailing" secondItem="Arz-ms-mqP" secondAttribute="trailing" id="Isp-5G-VMM"/>
+                            <constraint firstItem="Arz-ms-mqP" firstAttribute="top" secondItem="tOy-S4-hL0" secondAttribute="top" id="Ngj-LZ-d7V"/>
+                            <constraint firstAttribute="bottom" secondItem="Arz-ms-mqP" secondAttribute="bottom" id="r5U-bN-oFW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="graphContentView" destination="Arz-ms-mqP" id="rxT-yz-pgb"/>
+                    </connections>
+                </viewController>
+                <customObject id="9uD-mB-xHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="125"/>
+        </scene>
+    </scenes>
+</document>

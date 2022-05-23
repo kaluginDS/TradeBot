@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="bU7-R8-ocO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trade Bot View Controller-->
+        <scene sceneID="PEd-7d-5j0">
+            <objects>
+                <viewController storyboardIdentifier="TradeBotViewController" id="bU7-R8-ocO" customClass="TradeBotViewController" customModule="TradeBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="tOy-S4-hL0">
+                        <rect key="frame" x="0.0" y="0.0" width="304" height="731"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="7" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FbZ-Kw-ekp">
+                                <rect key="frame" x="16" y="379" width="272" height="336"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="klL-Yr-vqb">
+                                        <rect key="frame" x="0.0" y="261" width="266" height="75"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oXI-Oq-9bm" customClass="Label" customModule="TradeBot" customModuleProvider="target">
+                                                <rect key="frame" x="-2" y="59" width="270" height="16"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="WUH-um-Ywl">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hfm-hb-6BL" customClass="Button" customModule="TradeBot" customModuleProvider="target">
+                                                <rect key="frame" x="76" y="1" width="114" height="47"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="dRT-Go-sJd"/>
+                                                    <constraint firstAttribute="width" constant="100" id="yaH-Zg-297"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oW6-vQ-rkr">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="addAccountDidTouch:" target="bU7-R8-ocO" id="GIs-5R-Ipa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="oXI-Oq-9bm" secondAttribute="trailing" id="VEg-4y-jcL"/>
+                                            <constraint firstItem="Hfm-hb-6BL" firstAttribute="centerX" secondItem="klL-Yr-vqb" secondAttribute="centerX" id="fwJ-v4-Gkw"/>
+                                            <constraint firstItem="oXI-Oq-9bm" firstAttribute="top" secondItem="klL-Yr-vqb" secondAttribute="top" id="ilj-hf-uMw"/>
+                                            <constraint firstItem="oXI-Oq-9bm" firstAttribute="leading" secondItem="klL-Yr-vqb" secondAttribute="leading" id="nUd-4d-KMK"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hfm-hb-6BL" secondAttribute="bottom" constant="8" id="w0Z-f6-a71"/>
+                                            <constraint firstItem="Hfm-hb-6BL" firstAttribute="top" secondItem="oXI-Oq-9bm" secondAttribute="bottom" constant="16" id="y90-4U-OAc"/>
+                                        </constraints>
+                                    </customView>
+                                    <stackView distribution="fillEqually" orientation="vertical" alignment="leading" spacing="40" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rtz-tL-zH6">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="254"/>
+                                        <subviews>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="dKU-d2-KH3">
+                                                <rect key="frame" x="0.0" y="147" width="184" height="107"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zXj-TU-HqM" customClass="Label" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="-2" y="79" width="188" height="28"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="cqI-Kf-AaS">
+                                                            <font key="font" usesAppearanceFont="YES"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Nri-i3-O9a" customClass="Label" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="-2" y="59" width="188" height="16"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="Ko2-gt-zxW">
+                                                            <font key="font" usesAppearanceFont="YES"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nBt-eG-5x0" customClass="Button" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="-7" y="-7" width="198" height="47"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="3WZ-u9-SkP"/>
+                                                        </constraints>
+                                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="s5g-rD-HVY">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="changeTokenDidTouch:" target="bU7-R8-ocO" id="k0r-NM-6pb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="nBt-eG-5x0" secondAttribute="bottom" id="CQw-pb-UKH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zXj-TU-HqM" secondAttribute="trailing" id="NJx-ey-ZhN"/>
+                                                    <constraint firstItem="nBt-eG-5x0" firstAttribute="top" secondItem="Nri-i3-O9a" secondAttribute="bottom" constant="24" id="VBp-0f-Gbr"/>
+                                                    <constraint firstItem="zXj-TU-HqM" firstAttribute="leading" secondItem="dKU-d2-KH3" secondAttribute="leading" id="VUa-mp-S0l"/>
+                                                    <constraint firstItem="nBt-eG-5x0" firstAttribute="leading" secondItem="dKU-d2-KH3" secondAttribute="leading" id="WVI-FQ-7te"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Nri-i3-O9a" secondAttribute="trailing" id="a16-a3-w2H"/>
+                                                    <constraint firstItem="zXj-TU-HqM" firstAttribute="top" secondItem="dKU-d2-KH3" secondAttribute="top" id="nfo-0l-RZz"/>
+                                                    <constraint firstItem="Nri-i3-O9a" firstAttribute="top" secondItem="zXj-TU-HqM" secondAttribute="bottom" constant="4" id="shH-WX-v91"/>
+                                                    <constraint firstItem="Nri-i3-O9a" firstAttribute="leading" secondItem="dKU-d2-KH3" secondAttribute="leading" id="xQn-Ni-4fh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nBt-eG-5x0" secondAttribute="trailing" id="yb5-ha-cWM"/>
+                                                </constraints>
+                                            </customView>
+                                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mnh-Pj-fNG">
+                                                <rect key="frame" x="0.0" y="77" width="184" height="177"/>
+                                                <subviews>
+                                                    <popUpButton translatesAutoresizingMaskIntoConstraints="NO" id="edO-HL-xmt">
+                                                        <rect key="frame" x="-5" y="56" width="189" height="121"/>
+                                                        <popUpButtonCell key="cell" type="bevel" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" selectedItem="HFt-IT-p6p" id="KUO-dt-9Cj">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="menu"/>
+                                                            <menu key="menu" autoenablesItems="NO" id="xeu-Bj-iVc">
+                                                                <items>
+                                                                    <menuItem title="Item 1" state="on" id="HFt-IT-p6p"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                    </popUpButton>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5HQ-iC-1e7" customClass="Label" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="-2" y="24" width="188" height="16"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="cLa-I6-wFX">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rxm-kK-ghH" customClass="Label" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="-2" y="0.0" width="37" height="16"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="dgA-in-fIO">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fbu-no-hFh" customClass="Label" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="39" y="0.0" width="147" height="16"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="8TK-he-DYS">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="5HQ-iC-1e7" firstAttribute="top" secondItem="edO-HL-xmt" secondAttribute="bottom" constant="16" id="56O-5U-ktB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fbu-no-hFh" secondAttribute="trailing" id="5Jl-h1-I11"/>
+                                                    <constraint firstItem="rxm-kK-ghH" firstAttribute="top" secondItem="5HQ-iC-1e7" secondAttribute="bottom" constant="8" id="7Ul-iI-MRp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="edO-HL-xmt" secondAttribute="trailing" id="9Nr-Ek-4kb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fbu-no-hFh" secondAttribute="bottom" id="Ib1-wC-rO3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rxm-kK-ghH" secondAttribute="bottom" id="MbG-AP-IXr"/>
+                                                    <constraint firstItem="fbu-no-hFh" firstAttribute="leading" secondItem="rxm-kK-ghH" secondAttribute="trailing" constant="8" id="aba-ts-LB6"/>
+                                                    <constraint firstItem="edO-HL-xmt" firstAttribute="leading" secondItem="Mnh-Pj-fNG" secondAttribute="leading" id="bTR-dm-Qku"/>
+                                                    <constraint firstItem="rxm-kK-ghH" firstAttribute="leading" secondItem="Mnh-Pj-fNG" secondAttribute="leading" id="bcL-K9-gli"/>
+                                                    <constraint firstItem="5HQ-iC-1e7" firstAttribute="leading" secondItem="Mnh-Pj-fNG" secondAttribute="leading" id="c65-Wu-CEd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5HQ-iC-1e7" secondAttribute="trailing" id="fOm-nQ-VWB"/>
+                                                    <constraint firstItem="edO-HL-xmt" firstAttribute="top" secondItem="Mnh-Pj-fNG" secondAttribute="top" id="yS5-0g-SP7"/>
+                                                </constraints>
+                                            </customView>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="yV0-lA-qQr">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="107"/>
+                                                <subviews>
+                                                    <popUpButton translatesAutoresizingMaskIntoConstraints="NO" id="hw9-3w-N88">
+                                                        <rect key="frame" x="-5" y="59" width="189" height="24"/>
+                                                        <popUpButtonCell key="cell" type="bevel" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" selectedItem="dCh-Z5-yWW" id="RkC-h0-vLv">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="menu"/>
+                                                            <menu key="menu" autoenablesItems="NO" id="a7L-V4-VMC">
+                                                                <items>
+                                                                    <menuItem title="Item 1" state="on" id="dCh-Z5-yWW"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                    </popUpButton>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dbN-cl-unr" customClass="Button" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="-7" y="-7" width="198" height="47"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="HVd-bi-B6Y"/>
+                                                        </constraints>
+                                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AgJ-tT-tyJ">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="testStrategyDidTouch:" target="bU7-R8-ocO" id="JVx-Ux-IWa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Da4-Gb-wR7" customClass="Label" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="-2" y="91" width="188" height="16"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="pO3-ve-TPk">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Da4-Gb-wR7" firstAttribute="leading" secondItem="yV0-lA-qQr" secondAttribute="leading" id="8Dk-PD-qaa"/>
+                                                    <constraint firstItem="dbN-cl-unr" firstAttribute="leading" secondItem="yV0-lA-qQr" secondAttribute="leading" id="AdR-ww-6Vs"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dbN-cl-unr" secondAttribute="bottom" id="Cdh-7R-X8K"/>
+                                                    <constraint firstItem="dbN-cl-unr" firstAttribute="top" secondItem="hw9-3w-N88" secondAttribute="bottom" constant="24" id="Db3-ex-6st"/>
+                                                    <constraint firstItem="Da4-Gb-wR7" firstAttribute="top" secondItem="yV0-lA-qQr" secondAttribute="top" id="Kqv-5X-RdA"/>
+                                                    <constraint firstItem="dbN-cl-unr" firstAttribute="centerX" secondItem="yV0-lA-qQr" secondAttribute="centerX" id="Mai-6y-3Qo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dbN-cl-unr" secondAttribute="trailing" id="YwY-Jw-KsM"/>
+                                                    <constraint firstItem="hw9-3w-N88" firstAttribute="leading" secondItem="yV0-lA-qQr" secondAttribute="leading" id="cc0-ca-eUd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hw9-3w-N88" secondAttribute="trailing" id="dxi-qs-Dy2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Da4-Gb-wR7" secondAttribute="trailing" id="hxg-vl-1gs"/>
+                                                    <constraint firstItem="hw9-3w-N88" firstAttribute="top" secondItem="Da4-Gb-wR7" secondAttribute="bottom" constant="8" id="w7q-yo-Cbi"/>
+                                                </constraints>
+                                            </customView>
+                                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kef-vu-MCb">
+                                                <rect key="frame" x="0.0" y="155" width="184" height="99"/>
+                                                <subviews>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FUi-05-Kox" customClass="Button" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="-7" y="-7" width="198" height="47"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="HaY-mg-VPG"/>
+                                                        </constraints>
+                                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="abX-gk-KKI">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="tradingDidTouch:" target="bU7-R8-ocO" id="yuk-3m-VKa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2ce-Dw-ezB" customClass="Label" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="-2" y="83" width="188" height="16"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="sYD-1M-nnD">
+                                                            <font key="font" usesAppearanceFont="YES"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LBo-ak-o6p" customClass="Label" customModule="TradeBot" customModuleProvider="target">
+                                                        <rect key="frame" x="-2" y="59" width="188" height="16"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="272-gQ-JQk">
+                                                            <font key="font" usesAppearanceFont="YES"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="FUi-05-Kox" secondAttribute="bottom" id="0zT-lu-MPe"/>
+                                                    <constraint firstItem="2ce-Dw-ezB" firstAttribute="top" secondItem="Kef-vu-MCb" secondAttribute="top" id="6gZ-Nt-fHo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LBo-ak-o6p" secondAttribute="trailing" id="I5w-Kd-wga"/>
+                                                    <constraint firstItem="FUi-05-Kox" firstAttribute="leading" secondItem="Kef-vu-MCb" secondAttribute="leading" id="MNM-Xk-FeL"/>
+                                                    <constraint firstItem="2ce-Dw-ezB" firstAttribute="leading" secondItem="Kef-vu-MCb" secondAttribute="leading" id="N0w-1d-cCs"/>
+                                                    <constraint firstItem="LBo-ak-o6p" firstAttribute="leading" secondItem="Kef-vu-MCb" secondAttribute="leading" id="OS5-Nx-ZzW"/>
+                                                    <constraint firstItem="FUi-05-Kox" firstAttribute="top" secondItem="LBo-ak-o6p" secondAttribute="bottom" constant="24" id="UBN-T9-pZO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FUi-05-Kox" secondAttribute="trailing" id="cUL-IM-owr"/>
+                                                    <constraint firstItem="FUi-05-Kox" firstAttribute="centerX" secondItem="Kef-vu-MCb" secondAttribute="centerX" id="dIF-6j-ugl"/>
+                                                    <constraint firstItem="LBo-ak-o6p" firstAttribute="top" secondItem="2ce-Dw-ezB" secondAttribute="bottom" constant="8" id="fke-pE-h7c"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2ce-Dw-ezB" secondAttribute="trailing" id="zie-az-29b"/>
+                                                </constraints>
+                                            </customView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dKU-d2-KH3" firstAttribute="width" secondItem="rtz-tL-zH6" secondAttribute="width" id="0xG-t1-jxl"/>
+                                            <constraint firstAttribute="width" constant="184" id="M4B-KH-y37"/>
+                                            <constraint firstItem="yV0-lA-qQr" firstAttribute="width" secondItem="rtz-tL-zH6" secondAttribute="width" id="VGd-vv-Hlp"/>
+                                            <constraint firstItem="Kef-vu-MCb" firstAttribute="width" secondItem="rtz-tL-zH6" secondAttribute="width" id="XW8-P8-8hz"/>
+                                            <constraint firstItem="Mnh-Pj-fNG" firstAttribute="width" secondItem="rtz-tL-zH6" secondAttribute="width" id="wUI-AI-UjO"/>
+                                        </constraints>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FbZ-Kw-ekp" firstAttribute="top" secondItem="tOy-S4-hL0" secondAttribute="top" constant="16" id="VQd-s7-6fS"/>
+                            <constraint firstAttribute="trailing" secondItem="FbZ-Kw-ekp" secondAttribute="trailing" constant="16" id="gdb-Ob-B0F"/>
+                            <constraint firstItem="FbZ-Kw-ekp" firstAttribute="leading" secondItem="tOy-S4-hL0" secondAttribute="leading" constant="16" id="z56-hp-2xr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accountsButton" destination="edO-HL-xmt" id="8Dq-aT-3pZ"/>
+                        <outlet property="addAccountButton" destination="Hfm-hb-6BL" id="5NQ-hN-mJx"/>
+                        <outlet property="allMoneyLabel" destination="5HQ-iC-1e7" id="jbe-Ez-VRU"/>
+                        <outlet property="changeTokenButton" destination="nBt-eG-5x0" id="ek3-iL-5rm"/>
+                        <outlet property="controlView" destination="rtz-tL-zH6" id="xdb-QQ-oUs"/>
+                        <outlet property="noAccountsLabel" destination="oXI-Oq-9bm" id="r1B-GT-qH2"/>
+                        <outlet property="noAccountsView" destination="klL-Yr-vqb" id="xQx-Wn-NEO"/>
+                        <outlet property="profitLabel" destination="rxm-kK-ghH" id="d6K-hx-GNp"/>
+                        <outlet property="profitValueLabel" destination="fbu-no-hFh" id="Prw-gx-5oZ"/>
+                        <outlet property="statusLabel" destination="2ce-Dw-ezB" id="8hH-FV-Rlk"/>
+                        <outlet property="statusValueLabel" destination="LBo-ak-o6p" id="0QJ-xS-hg7"/>
+                        <outlet property="strategiesButton" destination="hw9-3w-N88" id="Ubc-xL-aTn"/>
+                        <outlet property="strategyLabel" destination="Da4-Gb-wR7" id="kJd-Cy-WoF"/>
+                        <outlet property="testStrategyButton" destination="dbN-cl-unr" id="xwH-xm-bt0"/>
+                        <outlet property="tokenLabel" destination="zXj-TU-HqM" id="1QA-fW-hTC"/>
+                        <outlet property="tokenTypeLabel" destination="Nri-i3-O9a" id="gTT-fO-WQ6"/>
+                        <outlet property="tradingButton" destination="FUi-05-Kox" id="cqt-3M-XoN"/>
+                    </connections>
+                </viewController>
+                <customObject id="9uD-mB-xHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="275.5"/>
+        </scene>
+    </scenes>
+</document>

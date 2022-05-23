@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="bU7-R8-ocO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tester View Controller-->
+        <scene sceneID="PEd-7d-5j0">
+            <objects>
+                <viewController storyboardIdentifier="TesterViewController" id="bU7-R8-ocO" customClass="TesterViewController" customModule="TradeBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="tOy-S4-hL0">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="30" horizontalPageScroll="10" verticalLineScroll="30" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysg-uY-Ba8">
+                                <rect key="frame" x="8" y="0.0" width="434" height="300"/>
+                                <clipView key="contentView" drawsBackground="NO" id="D4E-DP-QEi">
+                                    <rect key="frame" x="0.0" y="0.0" width="434" height="300"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="30" usesAutomaticRowHeights="YES" headerView="YJe-sx-Jcn" id="al7-iA-nEE">
+                                            <rect key="frame" x="0.0" y="0.0" width="434" height="272"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <size key="intercellSpacing" width="17" height="0.0"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                        </tableView>
+                                    </subviews>
+                                    <nil key="backgroundColor"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="qeD-Eh-rLn">
+                                    <rect key="frame" x="0.0" y="284" width="450" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Vhd-gb-qNf">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <tableHeaderView key="headerView" wantsLayer="YES" id="YJe-sx-Jcn">
+                                    <rect key="frame" x="0.0" y="0.0" width="434" height="28"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableHeaderView>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ysg-uY-Ba8" firstAttribute="leading" secondItem="tOy-S4-hL0" secondAttribute="leading" constant="8" id="7y5-qX-2j3"/>
+                            <constraint firstAttribute="bottom" secondItem="ysg-uY-Ba8" secondAttribute="bottom" id="Bhc-Qt-YDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="ysg-uY-Ba8" secondAttribute="trailing" constant="8" id="C8D-VK-vJi"/>
+                            <constraint firstItem="ysg-uY-Ba8" firstAttribute="top" secondItem="tOy-S4-hL0" secondAttribute="top" id="IUT-k8-SYl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="al7-iA-nEE" id="UaZ-Aq-PU7"/>
+                    </connections>
+                </viewController>
+                <customObject id="9uD-mB-xHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="115"/>
+        </scene>
+    </scenes>
+</document>

@@ -7,12 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F13CA102833ABE9005B9A03 /* ChildModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F13CA0F2833ABE9005B9A03 /* ChildModule.swift */; };
+		1F13CA142833B40D005B9A03 /* GraphViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F13CA132833B40D005B9A03 /* GraphViewController.storyboard */; };
+		1F16551A282967EA0069053A /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F165514282967EA0069053A /* MainModule.swift */; };
+		1F16551B282967EA0069053A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F165515282967EA0069053A /* MainPresenter.swift */; };
+		1F16551C282967EA0069053A /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F165516282967EA0069053A /* MainRouter.swift */; };
+		1F16551D282967EA0069053A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F165517282967EA0069053A /* MainViewController.swift */; };
+		1F16551E282967EA0069053A /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F165518282967EA0069053A /* MainProtocols.swift */; };
+		1F16551F282967EA0069053A /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F165519282967EA0069053A /* MainInteractor.swift */; };
+		1F165521282969280069053A /* ViewControllerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F165520282969280069053A /* ViewControllerable.swift */; };
+		1F16552428296ED60069053A /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F16552328296ED60069053A /* MainViewController.storyboard */; };
+		1F1655272829774C0069053A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1655262829774C0069053A /* main.swift */; };
+		1F16552C28297B840069053A /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F16552B28297B840069053A /* GlobalConstants.swift */; };
+		1F16552F2829C2CF0069053A /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F16552E2829C2CF0069053A /* Date+.swift */; };
+		1F1655312829C3910069053A /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1655302829C3910069053A /* String+.swift */; };
+		1F2CD43328311DF100906DA0 /* TradeBotInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CD42D28311DF100906DA0 /* TradeBotInteractor.swift */; };
+		1F2CD43B28312D0200906DA0 /* TinkoffInvestSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1F2CD43A28312D0200906DA0 /* TinkoffInvestSDK */; };
+		1F2CD44428313F0400906DA0 /* TradeBotModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CD43F28313F0400906DA0 /* TradeBotModule.swift */; };
+		1F2CD44528313F0400906DA0 /* TradeBotPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CD44028313F0400906DA0 /* TradeBotPresenter.swift */; };
+		1F2CD44628313F0400906DA0 /* TradeBotRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CD44128313F0400906DA0 /* TradeBotRouter.swift */; };
+		1F2CD44728313F0400906DA0 /* TradeBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CD44228313F0400906DA0 /* TradeBotViewController.swift */; };
+		1F2CD44828313F0400906DA0 /* TradeBotProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CD44328313F0400906DA0 /* TradeBotProtocols.swift */; };
+		1F2CD44A2831405800906DA0 /* TradeBotViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2CD4492831405800906DA0 /* TradeBotViewController.storyboard */; };
+		1F2D6DC12836292300D5929D /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DC02836292300D5929D /* CGFloat+.swift */; };
+		1F2D6DC328362C6A00D5929D /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DC228362C6A00D5929D /* Int+.swift */; };
+		1F2D6DC528364BBB00D5929D /* CursorTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DC428364BBB00D5929D /* CursorTableView.swift */; };
+		1F2D6DCE2836748C00D5929D /* TesterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DC82836748C00D5929D /* TesterModule.swift */; };
+		1F2D6DCF2836748C00D5929D /* TesterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DC92836748C00D5929D /* TesterPresenter.swift */; };
+		1F2D6DD02836748C00D5929D /* TesterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DCA2836748C00D5929D /* TesterRouter.swift */; };
+		1F2D6DD12836748C00D5929D /* TesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DCB2836748C00D5929D /* TesterViewController.swift */; };
+		1F2D6DD22836748C00D5929D /* TesterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DCC2836748C00D5929D /* TesterProtocols.swift */; };
+		1F2D6DD32836748C00D5929D /* TesterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DCD2836748C00D5929D /* TesterInteractor.swift */; };
+		1F2D6DD52836749E00D5929D /* TesterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2D6DD42836749E00D5929D /* TesterViewController.storyboard */; };
+		1F2D6DDA28369EDA00D5929D /* TwoLabelCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DD928369EDA00D5929D /* TwoLabelCellView.swift */; };
+		1F2D6DDE2836B01700D5929D /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D6DDD2836B01700D5929D /* Label.swift */; };
+		1F2E1448282ABF7900DDCF15 /* TradeStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E1447282ABF7900DDCF15 /* TradeStrategyProtocol.swift */; };
+		1F3B8DFD282D75B100C52CA6 /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B8DFC282D75B100C52CA6 /* Collection+.swift */; };
+		1F3D434D28390F8800C77DF7 /* Lodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D434C28390F8800C77DF7 /* Lodable.swift */; };
+		1F3D4350283960E600C77DF7 /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D434F283960E600C77DF7 /* AppDataService.swift */; };
+		1F3F77C2283A3A8D0094F291 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F77C1283A3A8D0094F291 /* Alertable.swift */; };
+		1F3F77C4283AB1A10094F291 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F77C3283AB1A10094F291 /* Color.swift */; };
+		1F3F77C6283AB25D0094F291 /* NSColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F77C5283AB25D0094F291 /* NSColor+.swift */; };
+		1F3F77C8283AF2140094F291 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F77C7283AF2140094F291 /* Button.swift */; };
+		1F483D9228325F9800927DE1 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D9128325F9800927DE1 /* Presentable.swift */; };
+		1F483D9428326BDA00927DE1 /* NSView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D9328326BDA00927DE1 /* NSView+Constraints.swift */; };
+		1F483D9C2832914000927DE1 /* GraphModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D962832914000927DE1 /* GraphModule.swift */; };
+		1F483D9D2832914000927DE1 /* GraphPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D972832914000927DE1 /* GraphPresenter.swift */; };
+		1F483D9E2832914000927DE1 /* GraphRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D982832914000927DE1 /* GraphRouter.swift */; };
+		1F483D9F2832914000927DE1 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D992832914000927DE1 /* GraphViewController.swift */; };
+		1F483DA02832914000927DE1 /* GraphProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D9A2832914000927DE1 /* GraphProtocols.swift */; };
+		1F483DA12832914000927DE1 /* GraphInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D9B2832914000927DE1 /* GraphInteractor.swift */; };
+		1F5D65FA2834E71300788D88 /* GraphContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D65F92834E71300788D88 /* GraphContentView.swift */; };
+		1F5D65FC2834E79F00788D88 /* AxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D65FB2834E79F00788D88 /* AxisView.swift */; };
+		1F5D66002834F35C00788D88 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D65FF2834F35C00788D88 /* GraphView.swift */; };
 		1FAF779B282939BA00A8BC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF779A282939BA00A8BC2E /* AppDelegate.swift */; };
 		1FAF779D282939BB00A8BC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF779C282939BB00A8BC2E /* Assets.xcassets */; };
-		1FAF77A0282939BB00A8BC2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF779E282939BB00A8BC2E /* MainMenu.xib */; };
 		1FAF77AB282939BB00A8BC2E /* TradeBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77AA282939BB00A8BC2E /* TradeBotTests.swift */; };
 		1FAF77B5282939BB00A8BC2E /* TradeBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77B4282939BB00A8BC2E /* TradeBotUITests.swift */; };
 		1FAF77B7282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77B6282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift */; };
+		1FBB06242837B2A30047551F /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB06232837B2A30047551F /* NSAttributedString+.swift */; };
+		1FBB06262837B4B10047551F /* LabelCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB06252837B4B10047551F /* LabelCellView.swift */; };
+		1FBB06282837BBF00047551F /* Decimal+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB06272837BBF00047551F /* Decimal+.swift */; };
+		1FD9FBC8282FB9D30060BA5D /* BarUpDownTradeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9FBC7282FB9D30060BA5D /* BarUpDownTradeStrategy.swift */; };
+		1FD9FBCD282FD0F40060BA5D /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9FBCC282FD0F40060BA5D /* MarketDataService.swift */; };
+		1FD9FBCF282FD1B00060BA5D /* MarketDataServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9FBCE282FD1B00060BA5D /* MarketDataServiceProtocols.swift */; };
+		1FD9FBD7283010AE0060BA5D /* StrategyTesterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9FBD1283010AE0060BA5D /* StrategyTesterModule.swift */; };
+		1FD9FBD8283010AE0060BA5D /* StrategyTesterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9FBD2283010AE0060BA5D /* StrategyTesterPresenter.swift */; };
+		1FD9FBDF283011040060BA5D /* StrategyTesterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9FBDE283011040060BA5D /* StrategyTesterProtocols.swift */; };
+		1FD9FBE1283017080060BA5D /* MarketDataTesterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9FBE0283017080060BA5D /* MarketDataTesterService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +95,79 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F13CA0F2833ABE9005B9A03 /* ChildModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildModule.swift; sourceTree = "<group>"; };
+		1F13CA132833B40D005B9A03 /* GraphViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GraphViewController.storyboard; sourceTree = "<group>"; };
+		1F165514282967EA0069053A /* MainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
+		1F165515282967EA0069053A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		1F165516282967EA0069053A /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		1F165517282967EA0069053A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1F165518282967EA0069053A /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		1F165519282967EA0069053A /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		1F165520282969280069053A /* ViewControllerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerable.swift; sourceTree = "<group>"; };
+		1F16552328296ED60069053A /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		1F1655262829774C0069053A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1F16552B28297B840069053A /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		1F16552E2829C2CF0069053A /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		1F1655302829C3910069053A /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		1F2CD42D28311DF100906DA0 /* TradeBotInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotInteractor.swift; sourceTree = "<group>"; };
+		1F2CD43828312BE000906DA0 /* TinkoffInvestSwiftSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TinkoffInvestSwiftSDK; path = ../TinkoffInvestSwiftSDK; sourceTree = "<group>"; };
+		1F2CD43F28313F0400906DA0 /* TradeBotModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotModule.swift; sourceTree = "<group>"; };
+		1F2CD44028313F0400906DA0 /* TradeBotPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotPresenter.swift; sourceTree = "<group>"; };
+		1F2CD44128313F0400906DA0 /* TradeBotRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotRouter.swift; sourceTree = "<group>"; };
+		1F2CD44228313F0400906DA0 /* TradeBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotViewController.swift; sourceTree = "<group>"; };
+		1F2CD44328313F0400906DA0 /* TradeBotProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotProtocols.swift; sourceTree = "<group>"; };
+		1F2CD4492831405800906DA0 /* TradeBotViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TradeBotViewController.storyboard; sourceTree = "<group>"; };
+		1F2D6DC02836292300D5929D /* CGFloat+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
+		1F2D6DC228362C6A00D5929D /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		1F2D6DC428364BBB00D5929D /* CursorTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursorTableView.swift; sourceTree = "<group>"; };
+		1F2D6DC82836748C00D5929D /* TesterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterModule.swift; sourceTree = "<group>"; };
+		1F2D6DC92836748C00D5929D /* TesterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterPresenter.swift; sourceTree = "<group>"; };
+		1F2D6DCA2836748C00D5929D /* TesterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterRouter.swift; sourceTree = "<group>"; };
+		1F2D6DCB2836748C00D5929D /* TesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterViewController.swift; sourceTree = "<group>"; };
+		1F2D6DCC2836748C00D5929D /* TesterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterProtocols.swift; sourceTree = "<group>"; };
+		1F2D6DCD2836748C00D5929D /* TesterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterInteractor.swift; sourceTree = "<group>"; };
+		1F2D6DD42836749E00D5929D /* TesterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TesterViewController.storyboard; sourceTree = "<group>"; };
+		1F2D6DD928369EDA00D5929D /* TwoLabelCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLabelCellView.swift; sourceTree = "<group>"; };
+		1F2D6DDD2836B01700D5929D /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		1F2E1447282ABF7900DDCF15 /* TradeStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeStrategyProtocol.swift; sourceTree = "<group>"; };
+		1F3B8DFC282D75B100C52CA6 /* Collection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
+		1F3D434C28390F8800C77DF7 /* Lodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lodable.swift; sourceTree = "<group>"; };
+		1F3D434F283960E600C77DF7 /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
+		1F3F77C1283A3A8D0094F291 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		1F3F77C3283AB1A10094F291 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		1F3F77C5283AB25D0094F291 /* NSColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+.swift"; sourceTree = "<group>"; };
+		1F3F77C7283AF2140094F291 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		1F483D9128325F9800927DE1 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		1F483D9328326BDA00927DE1 /* NSView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+Constraints.swift"; sourceTree = "<group>"; };
+		1F483D962832914000927DE1 /* GraphModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphModule.swift; sourceTree = "<group>"; };
+		1F483D972832914000927DE1 /* GraphPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphPresenter.swift; sourceTree = "<group>"; };
+		1F483D982832914000927DE1 /* GraphRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphRouter.swift; sourceTree = "<group>"; };
+		1F483D992832914000927DE1 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		1F483D9A2832914000927DE1 /* GraphProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphProtocols.swift; sourceTree = "<group>"; };
+		1F483D9B2832914000927DE1 /* GraphInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphInteractor.swift; sourceTree = "<group>"; };
+		1F5D65F92834E71300788D88 /* GraphContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphContentView.swift; sourceTree = "<group>"; };
+		1F5D65FB2834E79F00788D88 /* AxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisView.swift; sourceTree = "<group>"; };
+		1F5D65FF2834F35C00788D88 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		1FAF7797282939BA00A8BC2E /* TradeBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAF779A282939BA00A8BC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FAF779C282939BB00A8BC2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1FAF779F282939BB00A8BC2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1FAF77A1282939BB00A8BC2E /* TradeBot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TradeBot.entitlements; sourceTree = "<group>"; };
 		1FAF77A6282939BB00A8BC2E /* TradeBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAF77AA282939BB00A8BC2E /* TradeBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotTests.swift; sourceTree = "<group>"; };
 		1FAF77B0282939BB00A8BC2E /* TradeBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAF77B4282939BB00A8BC2E /* TradeBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITests.swift; sourceTree = "<group>"; };
 		1FAF77B6282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1FBB06232837B2A30047551F /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
+		1FBB06252837B4B10047551F /* LabelCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCellView.swift; sourceTree = "<group>"; };
+		1FBB06272837BBF00047551F /* Decimal+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+.swift"; sourceTree = "<group>"; };
+		1FD9FBC7282FB9D30060BA5D /* BarUpDownTradeStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarUpDownTradeStrategy.swift; sourceTree = "<group>"; };
+		1FD9FBC9282FBBE60060BA5D /* CodeStyle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeStyle.txt; sourceTree = "<group>"; };
+		1FD9FBCC282FD0F40060BA5D /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
+		1FD9FBCE282FD1B00060BA5D /* MarketDataServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataServiceProtocols.swift; sourceTree = "<group>"; };
+		1FD9FBD1283010AE0060BA5D /* StrategyTesterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyTesterModule.swift; sourceTree = "<group>"; };
+		1FD9FBD2283010AE0060BA5D /* StrategyTesterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyTesterPresenter.swift; sourceTree = "<group>"; };
+		1FD9FBDE283011040060BA5D /* StrategyTesterProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StrategyTesterProtocols.swift; path = ../../../../../.Trash/StrategyTesterProtocols.swift; sourceTree = "<group>"; };
+		1FD9FBE0283017080060BA5D /* MarketDataTesterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataTesterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2CD43B28312D0200906DA0 /* TinkoffInvestSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,13 +196,203 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F165513282964E00069053A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1F165514282967EA0069053A /* MainModule.swift */,
+				1F165517282967EA0069053A /* MainViewController.swift */,
+				1F165515282967EA0069053A /* MainPresenter.swift */,
+				1F165519282967EA0069053A /* MainInteractor.swift */,
+				1F165516282967EA0069053A /* MainRouter.swift */,
+				1F165518282967EA0069053A /* MainProtocols.swift */,
+				1F16552328296ED60069053A /* MainViewController.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1F165522282969B30069053A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1F2D6DDF2836B01C00D5929D /* Views */,
+				1F483D9028325F8900927DE1 /* Protocols */,
+				1F16552D2829C2BA0069053A /* Extensions */,
+				1F16552B28297B840069053A /* GlobalConstants.swift */,
+				1F3F77C3283AB1A10094F291 /* Color.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1F165525282977390069053A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1FAF779A282939BA00A8BC2E /* AppDelegate.swift */,
+				1F1655262829774C0069053A /* main.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1F16552D2829C2BA0069053A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F16552E2829C2CF0069053A /* Date+.swift */,
+				1F1655302829C3910069053A /* String+.swift */,
+				1F3B8DFC282D75B100C52CA6 /* Collection+.swift */,
+				1F483D9328326BDA00927DE1 /* NSView+Constraints.swift */,
+				1F2D6DC02836292300D5929D /* CGFloat+.swift */,
+				1F2D6DC228362C6A00D5929D /* Int+.swift */,
+				1FBB06232837B2A30047551F /* NSAttributedString+.swift */,
+				1FBB06272837BBF00047551F /* Decimal+.swift */,
+				1F3F77C5283AB25D0094F291 /* NSColor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1F2CD42528311DB500906DA0 /* TradeBot */ = {
+			isa = PBXGroup;
+			children = (
+				1F2CD43F28313F0400906DA0 /* TradeBotModule.swift */,
+				1F2CD44228313F0400906DA0 /* TradeBotViewController.swift */,
+				1F2CD44028313F0400906DA0 /* TradeBotPresenter.swift */,
+				1F2CD42D28311DF100906DA0 /* TradeBotInteractor.swift */,
+				1F2CD44128313F0400906DA0 /* TradeBotRouter.swift */,
+				1F2CD44328313F0400906DA0 /* TradeBotProtocols.swift */,
+				1F2CD4492831405800906DA0 /* TradeBotViewController.storyboard */,
+			);
+			path = TradeBot;
+			sourceTree = "<group>";
+		};
+		1F2CD43728312BE000906DA0 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1F2CD43828312BE000906DA0 /* TinkoffInvestSwiftSDK */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		1F2CD43928312D0200906DA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F2CD43C28313DE100906DA0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1F165513282964E00069053A /* Main */,
+				1F2D6DC72836744600D5929D /* Tester */,
+				1F483D95283290F500927DE1 /* Graph */,
+				1F2CD42528311DB500906DA0 /* TradeBot */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1F2D6DC72836744600D5929D /* Tester */ = {
+			isa = PBXGroup;
+			children = (
+				1F2D6DD828369EC200D5929D /* Views */,
+				1F2D6DC82836748C00D5929D /* TesterModule.swift */,
+				1F2D6DCB2836748C00D5929D /* TesterViewController.swift */,
+				1F2D6DC92836748C00D5929D /* TesterPresenter.swift */,
+				1F2D6DCD2836748C00D5929D /* TesterInteractor.swift */,
+				1F2D6DCA2836748C00D5929D /* TesterRouter.swift */,
+				1F2D6DCC2836748C00D5929D /* TesterProtocols.swift */,
+				1F2D6DD42836749E00D5929D /* TesterViewController.storyboard */,
+			);
+			path = Tester;
+			sourceTree = "<group>";
+		};
+		1F2D6DD828369EC200D5929D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F2D6DD928369EDA00D5929D /* TwoLabelCellView.swift */,
+				1FBB06252837B4B10047551F /* LabelCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F2D6DDF2836B01C00D5929D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F2D6DDD2836B01700D5929D /* Label.swift */,
+				1F3F77C7283AF2140094F291 /* Button.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F2E1446282ABF4500DDCF15 /* TradeStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				1F2E1447282ABF7900DDCF15 /* TradeStrategyProtocol.swift */,
+				1FD9FBC7282FB9D30060BA5D /* BarUpDownTradeStrategy.swift */,
+			);
+			path = TradeStrategies;
+			sourceTree = "<group>";
+		};
+		1F2E1449282ADF3900DDCF15 /* Trading */ = {
+			isa = PBXGroup;
+			children = (
+				1FD9FBDD283010B30060BA5D /* StrategyTester */,
+				1F2E1446282ABF4500DDCF15 /* TradeStrategies */,
+			);
+			path = Trading;
+			sourceTree = "<group>";
+		};
+		1F3D434E283960B000C77DF7 /* AppDataService */ = {
+			isa = PBXGroup;
+			children = (
+				1F3D434F283960E600C77DF7 /* AppDataService.swift */,
+			);
+			path = AppDataService;
+			sourceTree = "<group>";
+		};
+		1F483D9028325F8900927DE1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1F165520282969280069053A /* ViewControllerable.swift */,
+				1F483D9128325F9800927DE1 /* Presentable.swift */,
+				1F3D434C28390F8800C77DF7 /* Lodable.swift */,
+				1F13CA0F2833ABE9005B9A03 /* ChildModule.swift */,
+				1F3F77C1283A3A8D0094F291 /* Alertable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1F483D95283290F500927DE1 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				1F483DA22832916200927DE1 /* Views */,
+				1F483D962832914000927DE1 /* GraphModule.swift */,
+				1F483D992832914000927DE1 /* GraphViewController.swift */,
+				1F483D972832914000927DE1 /* GraphPresenter.swift */,
+				1F483D9B2832914000927DE1 /* GraphInteractor.swift */,
+				1F483D982832914000927DE1 /* GraphRouter.swift */,
+				1F483D9A2832914000927DE1 /* GraphProtocols.swift */,
+				1F13CA132833B40D005B9A03 /* GraphViewController.storyboard */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		1F483DA22832916200927DE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F5D65F92834E71300788D88 /* GraphContentView.swift */,
+				1F5D65FF2834F35C00788D88 /* GraphView.swift */,
+				1F5D65FB2834E79F00788D88 /* AxisView.swift */,
+				1F2D6DC428364BBB00D5929D /* CursorTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1FAF778E282939BA00A8BC2E = {
 			isa = PBXGroup;
 			children = (
+				1F2CD43728312BE000906DA0 /* Packages */,
 				1FAF7799282939BA00A8BC2E /* TradeBot */,
 				1FAF77A9282939BB00A8BC2E /* TradeBotTests */,
 				1FAF77B3282939BB00A8BC2E /* TradeBotUITests */,
 				1FAF7798282939BA00A8BC2E /* Products */,
+				1F2CD43928312D0200906DA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,10 +409,14 @@
 		1FAF7799282939BA00A8BC2E /* TradeBot */ = {
 			isa = PBXGroup;
 			children = (
-				1FAF779A282939BA00A8BC2E /* AppDelegate.swift */,
+				1FD9FBC9282FBBE60060BA5D /* CodeStyle.txt */,
+				1F165525282977390069053A /* AppDelegate */,
+				1FD9FBCB282FD0C40060BA5D /* Services */,
+				1F2E1449282ADF3900DDCF15 /* Trading */,
 				1FAF779C282939BB00A8BC2E /* Assets.xcassets */,
-				1FAF779E282939BB00A8BC2E /* MainMenu.xib */,
 				1FAF77A1282939BB00A8BC2E /* TradeBot.entitlements */,
+				1F2CD43C28313DE100906DA0 /* UI */,
+				1F165522282969B30069053A /* Common */,
 			);
 			path = TradeBot;
 			sourceTree = "<group>";
@@ -118,6 +438,35 @@
 			path = TradeBotUITests;
 			sourceTree = "<group>";
 		};
+		1FD9FBCB282FD0C40060BA5D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F3D434E283960B000C77DF7 /* AppDataService */,
+				1FD9FBD0282FD4A90060BA5D /* MarketDataService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1FD9FBD0282FD4A90060BA5D /* MarketDataService */ = {
+			isa = PBXGroup;
+			children = (
+				1FD9FBCE282FD1B00060BA5D /* MarketDataServiceProtocols.swift */,
+				1FD9FBCC282FD0F40060BA5D /* MarketDataService.swift */,
+				1FD9FBE0283017080060BA5D /* MarketDataTesterService.swift */,
+			);
+			path = MarketDataService;
+			sourceTree = "<group>";
+		};
+		1FD9FBDD283010B30060BA5D /* StrategyTester */ = {
+			isa = PBXGroup;
+			children = (
+				1FD9FBD1283010AE0060BA5D /* StrategyTesterModule.swift */,
+				1FD9FBD2283010AE0060BA5D /* StrategyTesterPresenter.swift */,
+				1FD9FBDE283011040060BA5D /* StrategyTesterProtocols.swift */,
+			);
+			path = StrategyTester;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +483,9 @@
 			dependencies = (
 			);
 			name = TradeBot;
+			packageProductDependencies = (
+				1F2CD43A28312D0200906DA0 /* TinkoffInvestSDK */,
+			);
 			productName = TradeBot;
 			productReference = 1FAF7797282939BA00A8BC2E /* TradeBot.app */;
 			productType = "com.apple.product-type.application";
@@ -206,6 +558,8 @@
 				Base,
 			);
 			mainGroup = 1FAF778E282939BA00A8BC2E;
+			packageReferences = (
+			);
 			productRefGroup = 1FAF7798282939BA00A8BC2E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,8 +576,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2D6DD52836749E00D5929D /* TesterViewController.storyboard in Resources */,
+				1F16552428296ED60069053A /* MainViewController.storyboard in Resources */,
 				1FAF779D282939BB00A8BC2E /* Assets.xcassets in Resources */,
-				1FAF77A0282939BB00A8BC2E /* MainMenu.xib in Resources */,
+				1F13CA142833B40D005B9A03 /* GraphViewController.storyboard in Resources */,
+				1F2CD44A2831405800906DA0 /* TradeBotViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +605,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD9FBD8283010AE0060BA5D /* StrategyTesterPresenter.swift in Sources */,
+				1F3D434D28390F8800C77DF7 /* Lodable.swift in Sources */,
+				1F16551A282967EA0069053A /* MainModule.swift in Sources */,
+				1F16551C282967EA0069053A /* MainRouter.swift in Sources */,
+				1F3F77C6283AB25D0094F291 /* NSColor+.swift in Sources */,
+				1F1655272829774C0069053A /* main.swift in Sources */,
+				1F2CD44628313F0400906DA0 /* TradeBotRouter.swift in Sources */,
+				1FD9FBE1283017080060BA5D /* MarketDataTesterService.swift in Sources */,
+				1F5D66002834F35C00788D88 /* GraphView.swift in Sources */,
+				1F2D6DCF2836748C00D5929D /* TesterPresenter.swift in Sources */,
+				1F16551E282967EA0069053A /* MainProtocols.swift in Sources */,
+				1F2D6DD12836748C00D5929D /* TesterViewController.swift in Sources */,
+				1F3D4350283960E600C77DF7 /* AppDataService.swift in Sources */,
+				1F2D6DC328362C6A00D5929D /* Int+.swift in Sources */,
+				1FD9FBDF283011040060BA5D /* StrategyTesterProtocols.swift in Sources */,
+				1F16551B282967EA0069053A /* MainPresenter.swift in Sources */,
+				1F2CD44728313F0400906DA0 /* TradeBotViewController.swift in Sources */,
+				1F2D6DDE2836B01700D5929D /* Label.swift in Sources */,
+				1F483D9428326BDA00927DE1 /* NSView+Constraints.swift in Sources */,
+				1F483D9D2832914000927DE1 /* GraphPresenter.swift in Sources */,
+				1F2CD44428313F0400906DA0 /* TradeBotModule.swift in Sources */,
+				1FBB06262837B4B10047551F /* LabelCellView.swift in Sources */,
+				1F2E1448282ABF7900DDCF15 /* TradeStrategyProtocol.swift in Sources */,
+				1F16552C28297B840069053A /* GlobalConstants.swift in Sources */,
+				1F483D9228325F9800927DE1 /* Presentable.swift in Sources */,
+				1F5D65FC2834E79F00788D88 /* AxisView.swift in Sources */,
 				1FAF779B282939BA00A8BC2E /* AppDelegate.swift in Sources */,
+				1FD9FBD7283010AE0060BA5D /* StrategyTesterModule.swift in Sources */,
+				1F16551F282967EA0069053A /* MainInteractor.swift in Sources */,
+				1F16552F2829C2CF0069053A /* Date+.swift in Sources */,
+				1F3F77C2283A3A8D0094F291 /* Alertable.swift in Sources */,
+				1F2CD44528313F0400906DA0 /* TradeBotPresenter.swift in Sources */,
+				1F2CD44828313F0400906DA0 /* TradeBotProtocols.swift in Sources */,
+				1F2D6DD02836748C00D5929D /* TesterRouter.swift in Sources */,
+				1F483DA12832914000927DE1 /* GraphInteractor.swift in Sources */,
+				1FD9FBCD282FD0F40060BA5D /* MarketDataService.swift in Sources */,
+				1FBB06282837BBF00047551F /* Decimal+.swift in Sources */,
+				1F2D6DC528364BBB00D5929D /* CursorTableView.swift in Sources */,
+				1F165521282969280069053A /* ViewControllerable.swift in Sources */,
+				1F2D6DCE2836748C00D5929D /* TesterModule.swift in Sources */,
+				1F483DA02832914000927DE1 /* GraphProtocols.swift in Sources */,
+				1F3B8DFD282D75B100C52CA6 /* Collection+.swift in Sources */,
+				1F2CD43328311DF100906DA0 /* TradeBotInteractor.swift in Sources */,
+				1FD9FBCF282FD1B00060BA5D /* MarketDataServiceProtocols.swift in Sources */,
+				1F483D9C2832914000927DE1 /* GraphModule.swift in Sources */,
+				1F2D6DDA28369EDA00D5929D /* TwoLabelCellView.swift in Sources */,
+				1F5D65FA2834E71300788D88 /* GraphContentView.swift in Sources */,
+				1FD9FBC8282FB9D30060BA5D /* BarUpDownTradeStrategy.swift in Sources */,
+				1F13CA102833ABE9005B9A03 /* ChildModule.swift in Sources */,
+				1F3F77C4283AB1A10094F291 /* Color.swift in Sources */,
+				1FBB06242837B2A30047551F /* NSAttributedString+.swift in Sources */,
+				1F2D6DD32836748C00D5929D /* TesterInteractor.swift in Sources */,
+				1F1655312829C3910069053A /* String+.swift in Sources */,
+				1F483D9F2832914000927DE1 /* GraphViewController.swift in Sources */,
+				1F3F77C8283AF2140094F291 /* Button.swift in Sources */,
+				1F2D6DD22836748C00D5929D /* TesterProtocols.swift in Sources */,
+				1F16551D282967EA0069053A /* MainViewController.swift in Sources */,
+				1F2D6DC12836292300D5929D /* CGFloat+.swift in Sources */,
+				1F483D9E2832914000927DE1 /* GraphRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,17 +698,6 @@
 			targetProxy = 1FAF77B1282939BB00A8BC2E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1FAF779E282939BB00A8BC2E /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FAF779F282939BB00A8BC2E /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1FAF77B8282939BB00A8BC2E /* Debug */ = {
@@ -415,22 +819,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TradeBot/TradeBot.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M9F4FUBEEU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kalugin.TradeBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -442,22 +848,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TradeBot/TradeBot.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M9F4FUBEEU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kalugin.TradeBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -575,6 +983,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F2CD43A28312D0200906DA0 /* TinkoffInvestSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TinkoffInvestSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1FAF778F282939BA00A8BC2E /* Project object */;
 }
