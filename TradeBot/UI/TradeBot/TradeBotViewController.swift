@@ -95,7 +95,7 @@ final class TradeBotViewController: NSViewController, ViewControllerable {
         view.wantsLayer = true
         view.layer?.backgroundColor = Color.background.cgColor
 
-        controlView.isHidden = true
+        controlView.isHidden = false
         noAccountsView.isHidden = true
 
         setupNoAccountsView()
@@ -172,9 +172,9 @@ extension TradeBotViewController: TradeBotViewInput {
 
         tokenTypeLabel.attributedStringValue = viewModel.tokenTypeText
 
-        let accountsIsEmpty: Bool = viewModel.accounts.isEmpty
-        controlView.isHidden = accountsIsEmpty
-        noAccountsView.isHidden = !accountsIsEmpty
+//        let accountsIsEmpty: Bool = viewModel.accounts.isEmpty
+//        controlView.isHidden = accountsIsEmpty
+//        noAccountsView.isHidden = !accountsIsEmpty
 
         let menuItems: [NSMenuItem] = viewModel.accounts.map({
             let menuItem = NSMenuItem()

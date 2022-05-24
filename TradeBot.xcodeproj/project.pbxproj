@@ -56,6 +56,7 @@
 		1F483D9F2832914000927DE1 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D992832914000927DE1 /* GraphViewController.swift */; };
 		1F483DA02832914000927DE1 /* GraphProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D9A2832914000927DE1 /* GraphProtocols.swift */; };
 		1F483DA12832914000927DE1 /* GraphInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D9B2832914000927DE1 /* GraphInteractor.swift */; };
+		1F4A2A8B283D448C004DE340 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F4A2A8A283D448C004DE340 /* README.md */; };
 		1F5D65FA2834E71300788D88 /* GraphContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D65F92834E71300788D88 /* GraphContentView.swift */; };
 		1F5D65FC2834E79F00788D88 /* AxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D65FB2834E79F00788D88 /* AxisView.swift */; };
 		1F5D66002834F35C00788D88 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D65FF2834F35C00788D88 /* GraphView.swift */; };
@@ -65,8 +66,6 @@
 		1FAF77AB282939BB00A8BC2E /* TradeBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77AA282939BB00A8BC2E /* TradeBotTests.swift */; };
 		1FAF77B5282939BB00A8BC2E /* TradeBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77B4282939BB00A8BC2E /* TradeBotUITests.swift */; };
 		1FAF77B7282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77B6282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift */; };
-		1FBAD8A3283D31C2008A23EA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FBAD8A2283D31C2008A23EA /* README.md */; };
-		1FBAD8A6283D32A9008A23EA /* app-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBAD8A5283D32A9008A23EA /* app-screen.png */; };
 		1FBB06242837B2A30047551F /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB06232837B2A30047551F /* NSAttributedString+.swift */; };
 		1FBB06262837B4B10047551F /* LabelCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB06252837B4B10047551F /* LabelCellView.swift */; };
 		1FBB06282837BBF00047551F /* Decimal+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB06272837BBF00047551F /* Decimal+.swift */; };
@@ -146,6 +145,7 @@
 		1F483D992832914000927DE1 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		1F483D9A2832914000927DE1 /* GraphProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphProtocols.swift; sourceTree = "<group>"; };
 		1F483D9B2832914000927DE1 /* GraphInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphInteractor.swift; sourceTree = "<group>"; };
+		1F4A2A8A283D448C004DE340 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		1F5D65F92834E71300788D88 /* GraphContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphContentView.swift; sourceTree = "<group>"; };
 		1F5D65FB2834E79F00788D88 /* AxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisView.swift; sourceTree = "<group>"; };
 		1F5D65FF2834F35C00788D88 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
@@ -159,7 +159,6 @@
 		1FAF77B0282939BB00A8BC2E /* TradeBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAF77B4282939BB00A8BC2E /* TradeBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITests.swift; sourceTree = "<group>"; };
 		1FAF77B6282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1FBAD8A2283D31C2008A23EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		1FBAD8A5283D32A9008A23EA /* app-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-screen.png"; sourceTree = "<group>"; };
 		1FBB06232837B2A30047551F /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
 		1FBB06252837B4B10047551F /* LabelCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCellView.swift; sourceTree = "<group>"; };
@@ -380,6 +379,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1F4A2A89283D4415004DE340 /* Readme */ = {
+			isa = PBXGroup;
+			children = (
+				1FBAD8A5283D32A9008A23EA /* app-screen.png */,
+				1F4A2A8A283D448C004DE340 /* README.md */,
+			);
+			path = Readme;
+			sourceTree = "<group>";
+		};
 		1FA70718283C20A300933A19 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,19 +453,10 @@
 		1FBAD89E283D2FFB008A23EA /* Docs */ = {
 			isa = PBXGroup;
 			children = (
-				1FBAD8A4283D31D5008A23EA /* ReadmeResource */,
-				1FBAD8A2283D31C2008A23EA /* README.md */,
+				1F4A2A89283D4415004DE340 /* Readme */,
 				1FD9FBC9282FBBE60060BA5D /* CodeStyle.txt */,
 			);
 			path = Docs;
-			sourceTree = "<group>";
-		};
-		1FBAD8A4283D31D5008A23EA /* ReadmeResource */ = {
-			isa = PBXGroup;
-			children = (
-				1FBAD8A5283D32A9008A23EA /* app-screen.png */,
-			);
-			path = ReadmeResource;
 			sourceTree = "<group>";
 		};
 		1FD9FBCB282FD0C40060BA5D /* Services */ = {
@@ -598,10 +597,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4A2A8B283D448C004DE340 /* README.md in Resources */,
 				1F2D6DD52836749E00D5929D /* TesterViewController.storyboard in Resources */,
-				1FBAD8A6283D32A9008A23EA /* app-screen.png in Resources */,
 				1F16552428296ED60069053A /* MainViewController.storyboard in Resources */,
-				1FBAD8A3283D31C2008A23EA /* README.md in Resources */,
 				1FAF779D282939BB00A8BC2E /* Assets.xcassets in Resources */,
 				1F13CA142833B40D005B9A03 /* GraphViewController.storyboard in Resources */,
 				1F2CD44A2831405800906DA0 /* TradeBotViewController.storyboard in Resources */,
