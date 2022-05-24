@@ -35,7 +35,7 @@ final class GraphModule {
         view.output = presenter
         self.presentableView = view
 
-        let tokenProvider = DefaultTokenProvider(token: GlobalConstants.sandboxToken)
+        let tokenProvider = DefaultTokenProvider(token: AppDataService.shared.token)
         let sdk = TinkoffInvestSDK(tokenProvider: tokenProvider)
 
         let interactor = GraphInteractor()

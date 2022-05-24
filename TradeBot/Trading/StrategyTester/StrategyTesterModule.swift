@@ -35,7 +35,7 @@ final class StrategyTesterModule {
     init(model: StrategyTesterModuleModel) {
         presenter = StrategyTesterPresenter()
 
-        let tokenProvider = DefaultTokenProvider(token: GlobalConstants.sandboxToken)
+        let tokenProvider = DefaultTokenProvider(token: AppDataService.shared.token)
         let tinkoffSDK = TinkoffInvestSDK(tokenProvider: tokenProvider)
         let service = MarketDataService()
         service.tinkoffSDK = tinkoffSDK
