@@ -1,5 +1,5 @@
 # TradeBot
-![app screen](/Docs/app-screen.png)
+![app screen](TradeBot/Docs/ReadmeResource/app-screen.png)
 
 Приложение тестирует торговую стратегию на тестовых данных. 
 

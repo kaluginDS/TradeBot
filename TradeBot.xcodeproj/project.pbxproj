@@ -65,8 +65,8 @@
 		1FAF77AB282939BB00A8BC2E /* TradeBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77AA282939BB00A8BC2E /* TradeBotTests.swift */; };
 		1FAF77B5282939BB00A8BC2E /* TradeBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77B4282939BB00A8BC2E /* TradeBotUITests.swift */; };
 		1FAF77B7282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF77B6282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift */; };
-		1FBAD89D283D2FEC008A23EA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FBAD89C283D2FEC008A23EA /* README.md */; };
 		1FBAD8A1283D30C5008A23EA /* app-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBAD8A0283D30C5008A23EA /* app-screen.png */; };
+		1FBAD8A3283D31C2008A23EA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FBAD8A2283D31C2008A23EA /* README.md */; };
 		1FBB06242837B2A30047551F /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB06232837B2A30047551F /* NSAttributedString+.swift */; };
 		1FBB06262837B4B10047551F /* LabelCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB06252837B4B10047551F /* LabelCellView.swift */; };
 		1FBB06282837BBF00047551F /* Decimal+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB06272837BBF00047551F /* Decimal+.swift */; };
@@ -159,8 +159,8 @@
 		1FAF77B0282939BB00A8BC2E /* TradeBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAF77B4282939BB00A8BC2E /* TradeBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITests.swift; sourceTree = "<group>"; };
 		1FAF77B6282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1FBAD89C283D2FEC008A23EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = TradeBot/README.md; sourceTree = SOURCE_ROOT; };
 		1FBAD8A0283D30C5008A23EA /* app-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-screen.png"; path = "../../../../Desktop/app-screen.png"; sourceTree = "<group>"; };
+		1FBAD8A2283D31C2008A23EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		1FBB06232837B2A30047551F /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
 		1FBB06252837B4B10047551F /* LabelCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCellView.swift; sourceTree = "<group>"; };
 		1FBB06272837BBF00047551F /* Decimal+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+.swift"; sourceTree = "<group>"; };
@@ -413,7 +413,6 @@
 		1FAF7799282939BA00A8BC2E /* TradeBot */ = {
 			isa = PBXGroup;
 			children = (
-				1FBAD89C283D2FEC008A23EA /* README.md */,
 				1FD9FBC9282FBBE60060BA5D /* CodeStyle.txt */,
 				1FBAD89E283D2FFB008A23EA /* Docs */,
 				1F165525282977390069053A /* AppDelegate */,
@@ -447,9 +446,18 @@
 		1FBAD89E283D2FFB008A23EA /* Docs */ = {
 			isa = PBXGroup;
 			children = (
+				1FBAD8A4283D31D5008A23EA /* ReadmeResource */,
+				1FBAD8A2283D31C2008A23EA /* README.md */,
 				1FBAD8A0283D30C5008A23EA /* app-screen.png */,
 			);
 			path = Docs;
+			sourceTree = "<group>";
+		};
+		1FBAD8A4283D31D5008A23EA /* ReadmeResource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReadmeResource;
 			sourceTree = "<group>";
 		};
 		1FD9FBCB282FD0C40060BA5D /* Services */ = {
@@ -590,10 +598,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FBAD89D283D2FEC008A23EA /* README.md in Resources */,
 				1FBAD8A1283D30C5008A23EA /* app-screen.png in Resources */,
 				1F2D6DD52836749E00D5929D /* TesterViewController.storyboard in Resources */,
 				1F16552428296ED60069053A /* MainViewController.storyboard in Resources */,
+				1FBAD8A3283D31C2008A23EA /* README.md in Resources */,
 				1FAF779D282939BB00A8BC2E /* Assets.xcassets in Resources */,
 				1F13CA142833B40D005B9A03 /* GraphViewController.storyboard in Resources */,
 				1F2CD44A2831405800906DA0 /* TradeBotViewController.storyboard in Resources */,
