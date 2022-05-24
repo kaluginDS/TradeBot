@@ -159,7 +159,7 @@
 		1FAF77B0282939BB00A8BC2E /* TradeBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAF77B4282939BB00A8BC2E /* TradeBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITests.swift; sourceTree = "<group>"; };
 		1FAF77B6282939BB00A8BC2E /* TradeBotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1FBAD89C283D2FEC008A23EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = TradeBot/Docs/README.md; sourceTree = SOURCE_ROOT; };
+		1FBAD89C283D2FEC008A23EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = TradeBot/README.md; sourceTree = SOURCE_ROOT; };
 		1FBAD8A0283D30C5008A23EA /* app-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-screen.png"; path = "../../../../Desktop/app-screen.png"; sourceTree = "<group>"; };
 		1FBB06232837B2A30047551F /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
 		1FBB06252837B4B10047551F /* LabelCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCellView.swift; sourceTree = "<group>"; };
@@ -413,6 +413,8 @@
 		1FAF7799282939BA00A8BC2E /* TradeBot */ = {
 			isa = PBXGroup;
 			children = (
+				1FBAD89C283D2FEC008A23EA /* README.md */,
+				1FD9FBC9282FBBE60060BA5D /* CodeStyle.txt */,
 				1FBAD89E283D2FFB008A23EA /* Docs */,
 				1F165525282977390069053A /* AppDelegate */,
 				1FD9FBCB282FD0C40060BA5D /* Services */,
@@ -445,9 +447,7 @@
 		1FBAD89E283D2FFB008A23EA /* Docs */ = {
 			isa = PBXGroup;
 			children = (
-				1FD9FBC9282FBBE60060BA5D /* CodeStyle.txt */,
 				1FBAD8A0283D30C5008A23EA /* app-screen.png */,
-				1FBAD89C283D2FEC008A23EA /* README.md */,
 			);
 			path = Docs;
 			sourceTree = "<group>";
